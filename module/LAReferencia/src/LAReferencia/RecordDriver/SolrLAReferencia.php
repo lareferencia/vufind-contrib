@@ -26,9 +26,10 @@ class SolrLAReferencia extends SolrDefault
    **/
   public function getStatus()
   {
-    $value = null;
-    $value = $this->fields["status_str"];
-    return $value;
+    //$value = null;
+    //$value = $this->fields["status_str"];
+    //return $value;
+    return $this->getFieldValue('status_str');
   }
 
   /**
