@@ -1,0 +1,144 @@
+@import "bootstrap";
+
+@image-path: "../../lareferencia/images/";
+
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web:300,400,700');
+
+body {
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: 400;
+}
+
+a {
+  color: #00bab8;
+  transition: 0.4s;
+}
+
+a:hover, a:focus {
+  color: #8a0f0f;
+}
+
+.btn-primary {
+  transition: 0.4s;
+  background-color: #00BAB8;
+}
+
+.btn-primary:hover {
+  background-color: #04799c;
+  color: #FAFAFA;
+}
+
+.label-info, .result .format {
+  background-color: #3a5180;
+  color: #fff;
+  font-size: 14px;
+}
+
+#searchForm a.btn.btn-link, #searchForm a.reset-filters-btn 
+{
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 0;
+  color: #555;
+  background-color: rgba(0,0,0,0.05);
+  border-radius: 4px;
+}
+
+#searchForm a.btn.btn-link:hover, #searchForm a.reset-filters-btn:hover
+{
+  display: inline-block;
+  padding: .5rem 1rem;
+  border: 0;
+  border-radius: 4px;
+  background-color: #00BAB8;
+  color: #fff;
+}
+
+.container
+{
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.form-control
+{
+  border-radius: 0px;
+}
+
+/*Resultados*/
+
+.result {
+  border-bottom: 1px solid #04799c;
+  padding: 2em 0;
+}
+
+.result .result-body {
+  width: 100%;
+}
+
+.result-body {
+  margin-bottom: 10px;
+}
+
+.result .result-body .result-authors, .result .result-body .result-date {
+  margin-bottom: 1em;
+}
+
+.result .record-number {
+  display: none;
+}
+
+.result .result-links {
+  display: none;
+}
+
+.result .result-formats {
+  float: right;
+}
+
+.result-country {
+  float: left;
+}
+
+.country {
+  background-color: #f1686a;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  color: #fff;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25em;
+  //padding: 10px;
+  text-transform: uppercase;
+}
+
+.result .result-formats span {
+  //padding: .5em;
+  font-family: "Open Sans", sans-serif;
+}
+
+.result .result-title {
+  font-size: 1.5em;
+  margin: 0 0 0.75em;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+}
+
+.result .result-header {
+  width: 100%;
+  margin-bottom: 10px;
+  float: left;
+  padding-bottom: .25rem;
+  box-sizing: border-box;
+}
+
+
+@import "home";
+@import "header";
+@import "footer";
+@import "sidebar";
+@import "record";
+
