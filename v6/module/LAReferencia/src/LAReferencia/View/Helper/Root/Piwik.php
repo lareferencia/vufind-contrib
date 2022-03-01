@@ -400,6 +400,7 @@ class Piwik extends \Zend\View\Helper\AbstractHelper
         }
         $institutions = $institutions;
         $oai_identifier = $recordDriver->tryMethod('getIdentifierOAI');
+        $repository_id = $recordDriver->tryMethod('getRepositoryID');
 
         return [
             'RecordFormat' => $formats,
